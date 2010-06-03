@@ -25,7 +25,7 @@
 
 <asp:Content ContentPlaceHolderID="Scripts" runat="server">
 <%--		Intentionally using VirtualPathUtility directly because UrlContext is being tested--%>
-		<script src="<%= VirtualPathUtility.ToAbsolute("~/Shared/jquery-1.4.2.js") %>" type="text/javascript"></script>
+		<script src="<%= VirtualPathUtility.ToAbsolute("~/__scripts/jquery") %>" type="text/javascript"></script>
 		<script src="<%= VirtualPathUtility.ToAbsolute("~/Shared/testrunner.js") %>" type="text/javascript"></script>
 
 

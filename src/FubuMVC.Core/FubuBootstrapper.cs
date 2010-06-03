@@ -5,7 +5,7 @@ using FubuCore;
 using FubuMVC.Core.Bootstrapping;
 using FubuMVC.Core.Registration;
 using FubuMVC.Core.Runtime;
-using FubuMVC.Core.View;
+using FubuMVC.Core.Web;
 
 namespace FubuMVC.Core
 {
@@ -43,7 +43,13 @@ namespace FubuMVC.Core
                     routes.Add(route);
                 };
             });
+
+            addResourceRoutes(routes);
         }
 
+        private static void addResourceRoutes(ICollection<RouteBase> routes)
+        {
+            routes.Add(new Route("__scripts/jquery", new WebResourceRouteHandler(typeof(WebResourceDeclarations),  WebResourceDeclarations.jQuery, "text/javascript")));
+        }
     }
 }

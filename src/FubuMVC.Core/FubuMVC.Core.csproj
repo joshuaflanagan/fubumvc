@@ -256,8 +256,10 @@
     <Compile Include="View\WebForms\WebFormViewEngine.cs" />
     <Compile Include="View\WebForms\WebFormViewToken.cs" />
     <Compile Include="View\WebForms\WebFormViewFacility.cs" />
+    <Compile Include="Web\WebResourceRouteHandler.cs" />
     <Compile Include="Web\Security\WebAuthenticationContext.cs" />
     <Compile Include="Web\Security\WebSecurityContext.cs" />
+    <Compile Include="Web\WebResourceDeclarations.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FubuCore\FubuCore.csproj">
@@ -271,6 +273,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Diagnostics\diagnostics.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Web\jquery-1.4.2.min.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
